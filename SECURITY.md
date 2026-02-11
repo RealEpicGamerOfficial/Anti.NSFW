@@ -1,25 +1,13 @@
 # Security Policy
 
-This app uses HTTPS Connections and DOES NOT STORE ANY DATA after the user leaves.
-
+The AI model is designed to run completly locally on the host's device, this means NO DATA SHOULD BE LEAVING THE DEVICE.  THIS ALSO MEANS THAT DATA ISN'T BEING SHARED WITH 1st OR 3rd PARTIES!
 ## Supported Versions
 
 The following chart shows which versions have safety features build-in.
 
 | Version | Supported          | Main Security Practice |
 | ------- | ------------------ | ------------------ |
-| 1.9.0   | :white_check_mark: | HTTPS  |
-| 1.8.0   | :white_check_mark: | HTTPS  |
-| b1.7.0  | :x:                | None, Private Testing Release |
-| b1.6.0   | :white_check_mark: | HTTPS |
-| 1.5.0   | :white_check_mark: | HTTPS |
-| 1.4.0   | :white_check_mark: | HTTPS |
-| 1.3.0   | :white_check_mark: | HTTPS |
-| 1.2.0   | :white_check_mark: | HTTPS |
-| 1.1.0   | :white_check_mark: | HTTPS |
-| 1.0.0   | :x:                | None, Local FIle |
-
-*HTTPS is available on the OFFICIAL site. (Linked in the repo's description.)
+| 1.0.0   | ☑️                | Local AI Model, Local File, Host Device Only  |
 
 ## Reporting a Vulnerability
 

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti.NSFW | Clean Browsing Extension</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #050505; color: #e2e8f0; font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .accent-text { background: linear-gradient(to right, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body>
+
+    <nav class="flex justify-between items-center p-8 max-w-7xl mx-auto">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                <i class="fas fa-eye-slash text-white text-sm"></i>
+            </div>
+            <span class="font-bold text-xl tracking-tight text-white">Anti.NSFW</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+            <a href="#install" class="hover:text-white transition">Installation</a>
+            <a href="#license" class="hover:text-white transition">License</a>
+            <a href="https://github.com/RealEpicGamerOfficial/Anti.NSFW" class="hover:text-white transition">Source Code</a>
+        </div>
+    </nav>
+
+    <section class="py-20 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <span class="px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-widest">
+                Chromium Extension
+            </span>
+            <h1 class="text-6xl md:text-7xl font-black mt-8 mb-6 text-white leading-tight">
+                Browse with <span class="accent-text">Confidence.</span>
+            </h1>
+            <p class="text-lg text-slate-400 mb-10 leading-relaxed">
+                An open-source Chromium extension designed to filter NSFW content in real-time. Keep your browsing experience clean, safe, and focused.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://github.com/RealEpicGamerOfficial/Anti.NSFW" class="bg-white text-black px-8 py-4 rounded-xl font-bold hover:scale-105 transition transform">
+                    <i class="fab fa-github mr-2"></i>View on GitHub
+                </a>
+                <div class="flex items-center gap-3 px-6 py-4 rounded-xl glass">
+                    <i class="fab fa-chrome text-xl text-blue-400"></i>
+                    <i class="fab fa-edge text-xl text-blue-500"></i>
+                    <span class="text-sm font-semibold">Chromium Ready</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="install" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">How to Install</h2>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold">1</div>
+                        <p class="text-slate-400"><span class="text-white font-semibold">Download</span> the source code from the repository as a ZIP file and extract it.</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold">2</div>
+                        <p class="text-slate-400">Open <span class="text-white font-semibold">chrome://extensions</span> in your Chromium-based browser.</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold">3</div>
+                        <p class="text-slate-400">Enable <span class="text-white font-semibold">Developer Mode</span> in the top right corner.</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold">4</div>
+                        <p class="text-slate-400">Click <span class="text-white font-semibold">Load Unpacked</span> and select the extracted folder.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <div class="flex gap-2 mb-4">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <div class="font-mono text-sm space-y-2">
+                    <p class="text-emerald-400">// manifest.json</p>
+                    <p><span class="text-blue-400">"name"</span>: "Anti.NSFW",</p>
+                    <p><span class="text-blue-400">"version"</span>: "1.0.0",</p>
+                    <p><span class="text-blue-400">"permissions"</span>: ["declarativeNetRequest", "storage"],</p>
+                    <p class="text-slate-500 italic mt-4">// Active protection enabled</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="license" class="py-24 px-6 bg-blue-600/5">
+        <div class="max-w-4xl mx-auto text-center glass p-12 rounded-3xl border-blue-500/20">
+            <h2 class="text-3xl font-bold mb-6">Open Source & Transparency</h2>
+            <p class="text-slate-400 mb-8">
+                This project is licensed under <span class="text-white font-bold">CC BY-NC-SA (Creative Commons Attribution-NonCommercial-ShareAlike)</span>. 
+                This means you are free to adapt and build upon the code, provided it's not for commercial use and you share your contributions under the same license.
+            </p>
+            <div class="flex justify-center gap-6 text-2xl text-slate-500">
+                <i class="fab fa-creative-commons"></i>
+                <i class="fab fa-creative-commons-by"></i>
+                <i class="fab fa-creative-commons-nc"></i>
+                <i class="fab fa-creative-commons-sa"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 border-t border-slate-900 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:row justify-between items-center gap-6">
+            <p class="text-slate-500 text-sm">© 2024 Anti.NSFW Project. Created by <a href="https://github.com/RealEpicGamerOfficial" class="text-blue-400 hover:underline">RealEpicGamerOfficial</a>.</p>
+            <div class="flex gap-6">
+                <a href="https://github.com/RealEpicGamerOfficial/Anti.NSFW/issues" class="text-slate-500 hover:text-white transition">Report Issue</a>
+                <a href="https://github.com/RealEpicGamerOfficial/Anti.NSFW/pulls" class="text-slate-500 hover:text-white transition">Contribute</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
